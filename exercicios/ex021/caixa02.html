@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: dimgrey;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0
+        }
+        header{
+            background-color: aliceblue;
+            padding: 5px 10px;
+            margin: 5px;
+        }
+        header > h1{
+            text-align: center;
+        }
+        main{
+            background-color: antiquewhite;
+            padding: 5px 10px;
+            margin: 5px;
+        }
+        
+        nav{
+            background-color: rgb(212, 212, 212); 
+        }
+
+        nav > a {
+            text-decoration: none;
+            margin-right: 20px;
+                     
+        }
+        nav > a:hover{
+            color: orange;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            padding: 1px;
+            margin: 5px;
+        }
+        footer > p{
+            margin: 0;
+        }
+
+    </style>
+</head>
+    <!--grouping tags NÃO SEMÂNTICAS-->
+    <!--<div></div> tag não semantica de divisão de conteúdo, do tipo box-level, display block-->
+    <!--<span></span> tag não semantica de divisão de conteúdo, do tipo inline-level, display block-->
+<body><!--grouping tags SEMÂNTICAS-->
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>        
+    </header>
+    <main> <!--tag do conteúdo principal-->
+        <section id="assunto"><!--tag de um conteúdo que tem seu fim nele mesmo, título, parágrafo, mídas, etc-->
+            <article> <!--tag de artigo, seja próprio ou externo, pode ter títulos e parágrafos-->
+                <h1>Esportes</h1>
+                <p>Copa do mundo e suas frustrações</p>
+            </article>
+            <article>
+                <aside><!--para colocar um conteúdo destacado do corpo principal, normalmente tangenciando ou criando uma coluna lateral-->
+                    <p>Artigo escrito por Flávio</p>
+                </aside>
+            </article>
+        </section>
+ 
+    </main>
+    <footer>
+        <p>Desenvolvimento pelo Cursoemvideo</p>
+    </footer>
+   
+
+    
+</body>
+</html>

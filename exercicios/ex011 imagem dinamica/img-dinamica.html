@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png"> <!--aqui temos que caso a resolução da tela do usuário for <= 750px, será carregada a imagem pequena-->
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png"><!-- caso a tela do usuário tiver resolução até 1050px, será carregada a imagem média-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível"><!--Por padrão a imagem carregada será a grande, importante atentar ao tamanho das imagens na ordem crescente de tela X tamanho de imagem-->
+    </picture>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/demilitarized-zone.mp3" controls ></audio>
+    <!--outra forma de inserir áudio abaixo-->
+
+    <audio preload="metadata" controls> <!--outra forma, cuidar com o preload auto, pois ele só vai carregar o site depois de carregar todos os arquivos de áudio, caso for muito grande, pode causar muita lentidão!, metadata carrega algumas informações e o none nenhuma-->
+        <source src="midia/demilitarized-zone.mp3" type="audio/mpeg"><!--audio formato mp3, formato no type é mpeg-->
+        <source src="midia/demilitarized-zone.ogg" type="audio/ogg"> <!-- ogg e wav são outras extensões para reprodução, caso a primera não funcione-->
+        <source src="midia/demilitarized-zone.mav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/demilitarized-zone.mp3">Clique aqui para baixara o arquivo</a></p> <!--caso nenhum dos formatos seja aberto no navegador, aparece uma imagem de informação-->
+    </audio>
+
+    <h1>Reproduzir vídeos</h1>
+    <p>Vídeos hospedados localmente, hospedados no MEU servidor</p> <!--interessante ver um conversor de vídeos estilo Handbrake, disponível para Windows 10 ou mais para colocar vários formatos, tipo o que acontece nos áudios--> <!--qualidade do vídeo é algo bem importante e oneroso, até 1080p tá ótimo, acima disso-->
+    <video width="560" height="315" controls poster=""> <!--o parâmetro poster serve -->
+        <source src="midia/pexels-polina-kovaleva-5524394.mp4" type="video/mp4">
+    </video>
+
+        <h1>Inserindo vídeos hospedados no servidor do YouTube</h1>
+    <!--Abra o vídeo no YT, vai em compartilhar > incorporar > copiar caminho-->
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
