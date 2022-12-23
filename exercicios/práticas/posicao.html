@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos</title>
+    <style>
+        body{
+            background-color: lightslategray;
+            height: 100vh;
+        }        
+        .bloco{
+            display: inline-block;
+            background-color: rgb(82, 40, 40);
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+        #q1{
+            background-color: blue;
+            position: absolute;
+            left: 800px;
+            top: 20px;
+            position: sticky;
+            /*aqui eu mexi na posição absoluta do elemento, defini sua localização, depois mudei sua posição para sticky, funcionou.*/
+            
+        }
+        #q2{
+            background-color: yellow;
+            position: sticky;/* com  a propriedade STICKY você prende o bloco no ponto determinado(ex top:20px;), mesmo dando scroll o q2 continua fixo*/
+            left: 70px;
+            top: 20px;
+            
+        }
+        p{
+            text-align: justify;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posicionamento Absoluto e Relativo</h1>
+        <div class="bloco" id="q1"></div>
+        <div class="bloco" id="q2"></div>
+        <div class="bloco"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore tempora sapiente eos repellat sed, at eligendi perferendis cum nemo, rerum mollitia molestiae libero laborum eum earum aspernatur, dolorum eius similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore eos rem sequi nostrum voluptates fugit repudiandae deserunt quam dicta, modi, soluta velit veritatis numquam iure et repellendus nulla distinctio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti minima suscipit, consequuntur fugiat perspiciatis voluptatem dolorem quis corporis saepe doloremque voluptas possimus consectetur earum ut quia exercitationem, veniam harum asperiores.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore tempora sapiente eos repellat sed, at eligendi perferendis cum nemo, rerum mollitia molestiae libero laborum eum earum aspernatur, dolorum eius similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore eos rem sequi nostrum voluptates fugit repudiandae deserunt quam dicta, modi, soluta velit veritatis numquam iure et repellendus nulla distinctio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti minima suscipit, consequuntur fugiat perspiciatis voluptatem dolorem quis corporis saepe doloremque voluptas possimus consectetur earum ut quia exercitationem, veniam harum asperiores.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore tempora sapiente eos repellat sed, at eligendi perferendis cum nemo, rerum mollitia molestiae libero laborum eum earum aspernatur, dolorum eius similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore eos rem sequi nostrum voluptates fugit repudiandae deserunt quam dicta, modi, soluta velit veritatis numquam iure et repellendus nulla distinctio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti minima suscipit, consequuntur fugiat perspiciatis voluptatem dolorem quis corporis saepe doloremque voluptas possimus consectetur earum ut quia exercitationem, veniam harum asperiores.</p>
+
+    
+</body>
+</html>
