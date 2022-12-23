@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos em CSS</title>
+    <style>
+        main > p{
+            background-color: red;
+        } /* Com > selecionamos o <p> FILHO de <main> e apenas ele*/
+        
+        img + p {
+            background-color: blue;
+        } /*Com + selecionamos o <img> E o <p> imediamente seguinte*/
+        
+        img ~ p {
+            background-color: yellow;
+        } /*Com ~ pegamos todos os seletores <p> que vêm depois de uma <img>*/
+
+        .principal p:not(#missao){
+            background-color: orange;
+        } /*Com a pseudo-classe :not, pegamos tudo o que  NÃO tem a classe="missao" e mudamos a cor*/
+
+        /*Como as pseudo-classes têm a mesma força, elas se sobrescrevem, para visulizar na prática cada um, testar separadamente*/
+
+    </style>
+
+</head>
+<body>
+    <main class="principal">
+        <p>Parágrafo de exemplo</p>
+
+        <section>
+            <img src="../ex022 - Background-images/imagens/pattern003.png" alt="Imagem ex">
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quaerat porro quae aut nesciunt quasi voluptate dolorum, veniam nam eum eaque voluptatem eos. Expedita deserunt saepe, sint possimus nulla accusantium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nostrum doloremque quibusdam accusamus omnis sint dolorum similique repudiandae inventore cupiditate fugit animi cum rem, impedit magni? Error expedita nihil excepturi! </p>
+            <p id="missao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, velit incidunt illum odit iste delectus sit enim unde ducimus consequuntur consequatur, qui harum vel natus laboriosam nihil esse dolorum tempora.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat architecto placeat aperiam iusto illo ipsum recusandae sint, ratione, qui magnam harum, eveniet perspiciatis aut. Totam ex molestias animi sint rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, explicabo totam accusamus, cumque incidunt quam cupiditate fugit sapiente alias laborum laboriosam, maiores quas error quis? Explicabo adipisci quaerat error eum!</p>
+        </section>
+    </main>
+</body>
+</html>
