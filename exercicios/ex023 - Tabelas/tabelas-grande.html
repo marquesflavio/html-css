@@ -18,7 +18,7 @@
             font-size: 2em;
             font-family: Arial, Helvetica, sans-serif;
         }
-        th{
+        th, .numT{
             background-color: gray;
             color: white;
 
@@ -29,6 +29,10 @@
         }
         .num{
             text-align: right;
+        }
+        tbody > tr:nth-child(2n){ /*pseudo-classe para efeito zebrado, nos parênteses aceita vários parâmetros, por exemplo even (par), odd (ímpar) etc...*/
+            background-color: lightgray;
+
         }
         
     </style>
@@ -95,7 +99,7 @@
          <tfoot>
             <tr>
                 <th scope="row">Quantidade Total</th>
-                <td></td>
+                <td class="numT"><strong>158 604 772</strong></td>
             </tr>            
          </tfoot>
     </table>
