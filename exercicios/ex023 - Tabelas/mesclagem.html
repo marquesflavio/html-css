@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclage de células</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <h1>Mesclando linhas e colunas</h1>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!--mesclou duas colunas, visualmente fica parecendo que a mesclagem é na linha, porém não, são colunas mescladas-->
+            
+        </tr>
+        <tr>
+            <td rowspan="2">D</td> <!--mesclou duas linhas, fica parecendo que a mesclagem foi feita na linha, porém não.-->
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            
+            <td>H</td>
+            <td>I</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
