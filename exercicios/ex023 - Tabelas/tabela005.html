@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Colgroup</title>
+        <style>
+            body{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            table{
+                width: 400px;
+                border-collapse: collapse;
+            }
+            caption{
+                font-size: 1.5em;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: lightgray;
+                border: 1px solid black;
+            }
+            td, th{
+                border: 1px solid black;
+                padding: 6px;
+                text-align: center;
+            }
+            .cNome{
+                background-color: aqua;
+            }
+        </style>
+
+
+</head>
+<body>
+    <!--é possível criar um estilo para colunas de uma tabela, sem precisar marcar cada item-->
+
+    <table>
+        <colgroup>
+            <col class="cNome"> <!--criar a quantidade de col da tabela e dar um identificador, depois é só personalizar no style-->
+            <col class="cSexo">
+            <col class="cProfissao"> <!--também é possível fazer uma classe e adicionar um span="2", dessa forma a personalização será feita para as duas colunas em sequência-->
+            <col class="cIdade">       
+        </colgroup>
+        <caption>Trabalhando com colgroup</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Profissão</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>Masc</td>
+            <td>Programador</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Fem</td>
+            <td>Médica</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>Masc</td>
+            <td>Motorista</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Eva</td>
+            <td>Fem</td>
+            <td>Artista</td>
+            <td>25</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
