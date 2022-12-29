@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            table{
+                width: 400px;
+                border-collapse: collapse;
+            }
+            caption{
+                font-size: 1.5em;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: lightgray;
+                border: 1px solid black;
+            }
+            td, th{
+                border: 1px solid black;
+                padding: 6px;
+                text-align: center;
+            }
+            .container{
+                overflow-x: auto;
+            } /*Macete para tornar uma tabela muita grande, mais responsiva para telas pequenas, com essa div, temos APENAS a tabela com rolagem lateral e não to conteúdo todo.*/
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero atque architecto unde repudiandae ut laudantium nam accusantium error sit eveniet iure nulla facilis, voluptatem ullam tenetur, non exercitationem obcaecati blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. In, itaque. Veritatis autem dicta nam earum modi excepturi assumenda porro nulla quaerat magni eveniet, consequatur ducimus commodi cumque eos aperiam sit.</p>
+
+    <div class="container"> <!--Essa div é para que a tabela seja possível de colocar num bloco de rolagem lateral separada do texto base-->
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produtos</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Produto 1</th>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>Produto 2</th>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>Produto 3</th>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>Produto 4</th>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
